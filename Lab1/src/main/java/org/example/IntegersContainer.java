@@ -1,18 +1,39 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+/**
+ * Задание: Создать класс контейнер, позволяющий хранить произвольное количество целых чисел.
+ * Использование встроенных коллекций запрещено.
+ * Задание можно реализовать с помощью массива или связанного списка.
+ * Контейнер должен позволять добавлять, извлекать, удалять элементы
+ * @author Илья Морозов
+ */
 
+
+/**
+ * Класс IntegersContainer представляет собой контейнер для хранения массива целых чисел.
+ * В нём реализованы методы добавления, удаления, получения и вывода элементов массива.
+ */
 
 public class IntegersContainer {
+    /** Поле массив */
     private int[] array;
+
+    /** Поле размер массива */
     private int size;
 
+    /**
+     * Конструктор по умолчанию
+     */
     public IntegersContainer() {
         array = new int [5];
         size = 0;
     }
 
+
+    /**
+     * Добавляет элемент в контейнер. Если массив заполнен, его размер увеличивается функцией resizeArray()
+     * @param data элемент, который необходимо добавить в контейнер
+     */
     public void addElement(int data)
     {
         if (size == array.length)
@@ -22,6 +43,13 @@ public class IntegersContainer {
         array[size++] = data;
     }
 
+    /**
+     * Возвращает элемент по указанному индексу
+     *
+     * @param index индекс элемента, который нужно вернуть
+     * @return элемент по указанному индексу
+     * @throws IndexOutOfBoundsException если индекс выходит за пределы массива.
+     */
     public int getElement(int index) {
         if (index < 0 || index >= size)
             throw new IndexOutOfBoundsException("Index " + index + ", size " + size);
@@ -29,6 +57,12 @@ public class IntegersContainer {
         return array[index];
     }
 
+
+    /**
+     * Удаляет элемент по указанному индексу. Все последующие элементы сдвигаются на одну позицию влево.
+     * @param index индекс элемента, который мы хотим удалить
+     * @throws IndexOutOfBoundsException если индекс выходит за пределы массива
+     */
     public void removeElement(int index)
     {
         if (index < 0 || index >= size)
@@ -40,6 +74,10 @@ public class IntegersContainer {
         size--;
     }
 
+
+    /**
+     * Увеличивает размер массива в два раза
+     */
     public void resizeArray()
     {
         int newSize = array.length * 2;
@@ -49,6 +87,9 @@ public class IntegersContainer {
         array = newArray;
     }
 
+    /**
+     * Вывод всех элементов массива на экран
+     */
     public void printArray()
     {
         for (int i = 0; i < size; i++)
@@ -56,6 +97,10 @@ public class IntegersContainer {
         System.out.println();
     }
 
+    /**
+     * Метод для базового тестирования функциональности класса.
+     * @param args аргументы командной строки (не используются)
+     */
     public static void main(String[] args)
     {
         IntegersContainer container = new IntegersContainer();
