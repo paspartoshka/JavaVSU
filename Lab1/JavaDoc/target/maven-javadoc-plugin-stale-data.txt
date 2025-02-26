@@ -1,0 +1,41 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'23'
+-sourcepath
+'C:/Users/paspartoshka/IdeaProjects/JavaVSU/Lab1/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/paspartoshka/IdeaProjects/JavaVSU/Lab1/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'ContainerClass 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'ContainerClass 1.0-SNAPSHOT API'
+org.example
+C:\Users\paspartoshka\IdeaProjects\JavaVSU\Lab1\src\main\java = 1740580343658
+C:\Users\paspartoshka\IdeaProjects\JavaVSU\Lab1\target\reports\apidocs\allclasses-index.html = 1740587359180
+C:\Users\paspartoshka\IdeaProjects\JavaVSU\Lab1\target\reports\apidocs\allpackages-index.html = 1740587359181
+C:\Users\paspartoshka\IdeaProjects\JavaVSU\Lab1\target\reports\apidocs\element-list = 1740587359090
+C:\Users\paspartoshka\IdeaProjects\JavaVSU\Lab1\target\reports\apidocs\help-doc.html = 1740587359229
+C:\Users\paspartoshka\IdeaProjects\JavaVSU\Lab1\target\reports\apidocs\index-all.html = 1740587359212
+C:\Users\paspartoshka\IdeaProjects\JavaVSU\Lab1\target\reports\apidocs\index.html = 1740587359220
+C:\Users\paspartoshka\IdeaProjects\JavaVSU\Lab1\target\reports\apidocs\member-search-index.js = 1740587359190
+C:\Users\paspartoshka\IdeaProjects\JavaVSU\Lab1\target\reports\apidocs\module-search-index.js = 1740587359185
+C:\Users\paspartoshka\IdeaProjects\JavaVSU\Lab1\target\reports\apidocs\overview-tree.html = 1740587359160
+C:\Users\paspartoshka\IdeaProjects\JavaVSU\Lab1\target\reports\apidocs\package-search-index.js = 1740587359188
+C:\Users\paspartoshka\IdeaProjects\JavaVSU\Lab1\target\reports\apidocs\search.html = 1740587359212
+C:\Users\paspartoshka\IdeaProjects\JavaVSU\Lab1\target\reports\apidocs\tag-search-index.js = 1740587359190
+C:\Users\paspartoshka\IdeaProjects\JavaVSU\Lab1\target\reports\apidocs\type-search-index.js = 1740587359190
