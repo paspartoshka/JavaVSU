@@ -97,6 +97,16 @@ public class IntegersContainer {
         System.out.println();
     }
 
+    public int getArraySize()
+    {
+        return size;
+    }
+
+    public int getArrayLength()
+    {
+        return array.length;
+    }
+
     /**
      * Метод для базового тестирования функциональности класса.
      * @param args аргументы командной строки (не используются)
