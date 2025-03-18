@@ -9,7 +9,7 @@ import java.util.*;
  */
 public class Calculator {
 
-    private static final Map<String, Double> variables = new HashMap<>();
+    public static final Map<String, Double> variables = new HashMap<>();
 
 
     /**
