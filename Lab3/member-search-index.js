@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"org.example","c":"ListsCompare","l":"compare(List<Integer>, int, String)","u":"compare(java.util.List,int,java.lang.String)"},{"p":"org.example","c":"ListsCompare","l":"ListsCompare()","u":"%3Cinit%3E()"},{"p":"org.example","c":"ListsCompare","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();
