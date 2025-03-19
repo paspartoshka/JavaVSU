@@ -58,4 +58,46 @@ public class ListsCompare {
         System.out.println("Get time = " + getTimer);
         System.out.println("Remove time = " + removeTimer);
     }
+
+    /**
+     * Используется для юнит тестов метода add
+     * @param list  список
+     * @param iters  количество итераций
+     * @return время
+     */
+    public static long testAdd(List<Integer> list, int iters)
+    {
+        long startTime = System.nanoTime();
+        for (int i = 0; i < iters; i++)
+            list.add(i);
+        return System.nanoTime() - startTime;
+    }
+
+    /**
+     * Используется для юнит тесто метода get
+     * @param list  список
+     * @param iters  количество итераций
+     * @return время
+     */
+    public static long testGet(List<Integer> list, int iters)
+    {
+        long startTime = System.nanoTime();
+        for (int i = 0; i < iters; i++)
+            list.get(i);
+        return System.nanoTime() - startTime;
+    }
+
+    /**
+     * Используется для юнит тестов метода remove
+     * @param list список
+     * @param iters количество итераций
+     * @return время
+     */
+    public static long testRemove(List<Integer> list, int iters)
+    {
+        long startTime = System.nanoTime();
+        for (int i = iters - 1; i >= 0; i--)
+            list.remove(i);
+        return System.nanoTime() - startTime;
+    }
 }
