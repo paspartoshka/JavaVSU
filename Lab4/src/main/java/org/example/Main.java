@@ -14,7 +14,7 @@ public class Main {
     /**
      * Класс подразделение
      */
-    static class Division {
+    public static class Division {
         private static int idCounter = 1;
         private int id;
         private String name;
@@ -45,7 +45,7 @@ public class Main {
     /**
      * Класс человек
      */
-    static class Person {
+    public static class Person {
         private int id;
         private String name;
         private String gender;
@@ -69,6 +69,30 @@ public class Main {
             this.birthDate = birthDate;
             this.division = division;
             this.salary = salary;
+        }
+
+        public int getId() {
+            return id;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public String getGender() {
+            return gender;
+        }
+
+        public LocalDate getBirthDate() {
+            return birthDate;
+        }
+
+        public Division getDivision() {
+            return division;
+        }
+
+        public double getSalary() {
+            return salary;
         }
 
         @Override
